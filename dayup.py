@@ -1,3 +1,5 @@
+import daydayup
+
 def dayUP(df):
     dayup = 1
     for i in range(365):
@@ -9,7 +11,8 @@ def dayUP(df):
             
     return dayup
 dayfactor = 0.01
-while dayUP(dayfactor) < 37.78:
+print(daydayup.daydayup())
+while dayUP(dayfactor) < daydayup.daydayup():
     dayfactor += 0.001
 
 print("工作日的努力参数是：{:.3f}".format(dayfactor))
